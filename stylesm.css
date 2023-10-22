@@ -1,0 +1,61 @@
+@keyframes color-animation {
+    0% { color: rgb(55, 0, 255); }
+    50% { color: rgb(0, 247, 255); }
+    100% { color: rgb(45, 146, 186); }   
+  }
+
+  @keyframes text-animation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  .text-animation {
+    background-image: linear-gradient(to right, red, blue, green);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text-animation 5s linear infinite;
+  }
+
+  body {
+    background:silver;
+  }
+
+div{
+    font-size: 36px;
+    font-family: 'Arial black', Times, serif;
+    text-align: center;
+}
+H1{
+    font-size: 24px;
+    text-align: center;
+    font-family: Copperplate Gothic;
+    animation: color-animation 5s infinite;
+    transition: color 0.5s ease-in-out;
+}
+
+h1:hover {
+    color: yellow;
+  }
+
+p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.frame {
+    border: 2px solid #000;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+  }
